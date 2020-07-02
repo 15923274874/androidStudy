@@ -3,6 +3,7 @@ package com.example.actionbar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -37,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //判断父Activity是否为空
+        if (NavUtils.getParentActivityName(MainActivity.this) != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);//显示向左图标
+        }
+
+
+
+
+
         actionBar = getSupportActionBar();
         show = findViewById(R.id.show);
         hidden = findViewById(R.id.hidden);
