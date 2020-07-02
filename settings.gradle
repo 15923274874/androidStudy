@@ -1,0 +1,2 @@
+include ':app', ':checkbox', ':datechoose', ':timechoose', ':chronometer', ':progressbar', ':seekbar', ':ratingbar', ':imageview', ':imageswitcher', ':groudview', ':xialaliebiao', ':scrollview', ':xuanxiangka', ':fragment', ':actionanddata', ':intentfilte', ':keyout'
+rootProject.name='AndroidStuady'

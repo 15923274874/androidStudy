@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <CheckBox
+       android:id="@+id/checkbox_01"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="复选框一"
+       android:textSize="19sp"
+       android:textColor="#D34141"
+       android:checked="true"/>
+    <CheckBox
+        android:id="@+id/checkbox_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复选框二"
+        android:textSize="19sp"
+        android:textColor="#D34141"
+        android:checked="true"/>
+    <CheckBox
+        android:id="@+id/checkbox_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复选框三"
+        android:textSize="19sp"
+        android:textColor="#D34141"
+        android:checked="true"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="确定"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="取消"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

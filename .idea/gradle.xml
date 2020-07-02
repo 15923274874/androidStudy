@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/actionanddata" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/checkbox" />
+            <option value="$PROJECT_DIR$/chronometer" />
+            <option value="$PROJECT_DIR$/datechoose" />
+            <option value="$PROJECT_DIR$/fragment" />
+            <option value="$PROJECT_DIR$/groudview" />
+            <option value="$PROJECT_DIR$/imageswitcher" />
+            <option value="$PROJECT_DIR$/imageview" />
+            <option value="$PROJECT_DIR$/intentfilte" />
+            <option value="$PROJECT_DIR$/keyout" />
+            <option value="$PROJECT_DIR$/progressbar" />
+            <option value="$PROJECT_DIR$/ratingbar" />
+            <option value="$PROJECT_DIR$/scrollview" />
+            <option value="$PROJECT_DIR$/seekbar" />
+            <option value="$PROJECT_DIR$/timechoose" />
+            <option value="$PROJECT_DIR$/xialaliebiao" />
+            <option value="$PROJECT_DIR$/xuanxiangka" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
