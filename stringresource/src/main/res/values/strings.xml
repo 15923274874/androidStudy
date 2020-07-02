@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">stringResource</string>
+    <string name="testTest">字符串文件测试</string>
+</resources>
