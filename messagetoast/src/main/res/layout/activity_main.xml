@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <Button
+       android:id="@+id/toast"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="Toast提示"/>
+
+   <Button
+       android:id="@+id/alertDialog1"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="alertDialog1"/>
+   <Button
+       android:id="@+id/alertDialog2"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="alertDialog2"/>
+   <Button
+       android:id="@+id/alertDialog3"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="alertDialog3"/>
+   <Button
+       android:id="@+id/alertDialog4"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="alertDialog4"/>
+   <Button
+       android:id="@+id/notification"
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:text="状态栏"/>
+</LinearLayout>
