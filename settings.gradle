@@ -1,2 +1,2 @@
-include ':app', ':checkbox', ':datechoose', ':timechoose', ':chronometer', ':progressbar', ':seekbar', ':ratingbar', ':imageview', ':imageswitcher', ':groudview', ':xialaliebiao', ':scrollview', ':xuanxiangka', ':fragment', ':actionanddata', ':intentfilte', ':keyout'
+include ':app', ':checkbox', ':datechoose', ':timechoose', ':chronometer', ':progressbar', ':seekbar', ':ratingbar', ':imageview', ':imageswitcher', ':groudview', ':xialaliebiao', ':scrollview', ':xuanxiangka', ':fragment', ':actionanddata', ':intentfilte', ':keyout', ':seepicture'
 rootProject.name='AndroidStuady'
