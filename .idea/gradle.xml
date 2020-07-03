@@ -30,6 +30,7 @@
             <option value="$PROJECT_DIR$/media" />
             <option value="$PROJECT_DIR$/messagetoast" />
             <option value="$PROJECT_DIR$/progressbar" />
+            <option value="$PROJECT_DIR$/provider" />
             <option value="$PROJECT_DIR$/ratingbar" />
             <option value="$PROJECT_DIR$/scrollview" />
             <option value="$PROJECT_DIR$/seekbar" />
