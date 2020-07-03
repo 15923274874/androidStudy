@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    drawable动画资源,duration停留时间-->
+    <item android:drawable="@drawable/flash1" android:duration="60"/>
+    <item android:drawable="@drawable/flash2" android:duration="60"/>
+    <item android:drawable="@drawable/flash3" android:duration="60"/>
+    <item android:drawable="@drawable/flash4" android:duration="60"/>
+    <item android:drawable="@drawable/flash5" android:duration="60"/>
+    <item android:drawable="@drawable/flash6" android:duration="60"/>
+    <item android:drawable="@drawable/flash7" android:duration="60"/>
+    <item android:drawable="@drawable/flash8" android:duration="60"/>
+</animation-list>

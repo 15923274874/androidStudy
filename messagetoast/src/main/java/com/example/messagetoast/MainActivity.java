@@ -3,15 +3,20 @@ package com.example.messagetoast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.annotation.TargetApi;
 import android.app.Dialog;
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -118,12 +123,30 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-
+    @TargetApi(Build.VERSION_CODES.O)
+    private void createNotificationChannel(String channelId, String channelName, int importance) {
+        NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
+        NotificationManager notificationManager = (NotificationManager) getSystemService(
+                NOTIFICATION_SERVICE);
+        notificationManager.createNotificationChannel(channel);
+    }
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+
+
+
+
+
+
+
+
         mToast = findViewById(R.id.toast);
         alertDialog1 = findViewById(R.id.alertDialog1);
         alertDialog2 = findViewById(R.id.alertDialog2);
@@ -137,8 +160,19 @@ public class MainActivity extends AppCompatActivity {
         alertDialog4.setOnClickListener(mOnClickListener);
         notification.setOnClickListener(mOnClickListener);
 
+        NotificationManagerCompat manager = NotificationManagerCompat.from(this);
+        // areNotificationsEnabled方法的有效性官方只最低支持到API 19，低于19的仍可调用此方法不过只会返回true，即默认为用户已经开启了通知。
+        Log.i("test", String.valueOf(manager.areNotificationsEnabled()));
+
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        Notification.Builder notification = new Notification.Builder(MainActivity.this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            String channelId = "chat";
+            String channelName = "聊天消息";
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
+            notificationManager.createNotificationChannel(channel);
+        }
+        NotificationCompat.Builder notification = new NotificationCompat.Builder(MainActivity.this,"chat");
         notification.setAutoCancel(true);//通知打开后自动消失
         notification.setSmallIcon(R.drawable.my);//设置通知图片
         notification.setContentTitle("测试通知栏");

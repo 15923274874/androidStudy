@@ -12,12 +12,14 @@
             <option value="$PROJECT_DIR$/actionbar" />
             <option value="$PROJECT_DIR$/actionbartab" />
             <option value="$PROJECT_DIR$/alarm" />
+            <option value="$PROJECT_DIR$/alphaanima" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcastreceiver" />
             <option value="$PROJECT_DIR$/checkbox" />
             <option value="$PROJECT_DIR$/chronometer" />
             <option value="$PROJECT_DIR$/datechoose" />
             <option value="$PROJECT_DIR$/draw" />
+            <option value="$PROJECT_DIR$/drawfiash" />
             <option value="$PROJECT_DIR$/drawtext" />
             <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/groudview" />
