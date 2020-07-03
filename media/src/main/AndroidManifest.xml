@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.media">
     <uses-permission android:name="android.permission.INTERNET"/>
+
+<!--    授予向SD卡中保存文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+<!--    授予程序中使用摄像头权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission
+    android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,8 +34,10 @@
         </activity>
         <activity android:name=".SoundActivity" />
         <activity android:name=".VideoViewActivity"
-            android:screenOrientation="landscape"/>
+            />
         <activity android:name=".SurfaceViewActivity" />
+        <activity android:name=".SurfaceView2Activity" />
+        <activity android:name=".SurfaceView3Activity" />
     </application>
 
 </manifest>

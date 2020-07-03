@@ -77,10 +77,32 @@
        android:gravity="center"
        android:orientation="horizontal">
       <Button
-          android:id="@+id/surfaceView"
+          android:id="@+id/toSurfaceView"
           android:layout_width="100dp"
           android:layout_height="70dp"
           android:text="开始"/>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+      <Button
+          android:id="@+id/toSurfaceView2"
+          android:layout_width="100dp"
+          android:layout_height="70dp"
+          android:text="拍照"/>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+      <Button
+          android:id="@+id/toSurfaceView3"
+          android:layout_width="100dp"
+          android:layout_height="70dp"
+          android:text="录像"/>
    </LinearLayout>
 
 </LinearLayout>

@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     private Button mediaStart;
     private Button mediaPause;
     private Button mediaStop;
-
     private Button soundStart;
-
     private Button videoView;
     private Button surfaceView;
+    private Button surfaceView2;
+    private Button surfaceView3;
 
 
     @Override
@@ -32,14 +32,18 @@ public class MainActivity extends AppCompatActivity {
         soundStart = findViewById(R.id.soundStart);
 
         videoView = findViewById(R.id.videoView);
-        surfaceView = findViewById(R.id.surfaceView);
+        surfaceView = findViewById(R.id.toSurfaceView);
+        surfaceView2 = findViewById(R.id.toSurfaceView2);
+        surfaceView3 = findViewById(R.id.toSurfaceView3);
+
         mMediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.test);
 
         mediaStart.setOnClickListener(mOnClickListener);
         mediaPause.setOnClickListener(mOnClickListener);
         mediaStop.setOnClickListener(mOnClickListener);
         surfaceView.setOnClickListener(mOnClickListener);
-
+        surfaceView2.setOnClickListener(mOnClickListener);
+        surfaceView3.setOnClickListener(mOnClickListener);
 
         soundStart.setOnClickListener(mOnClickListener);
         videoView.setOnClickListener(mOnClickListener);
@@ -71,8 +75,16 @@ public class MainActivity extends AppCompatActivity {
                     mIntent = new Intent(MainActivity.this,VideoViewActivity.class);
                     startActivity(mIntent);
                     break;
-                case R.id.surfaceView:
+                case R.id.toSurfaceView:
                     mIntent = new Intent(MainActivity.this,SurfaceViewActivity.class);
+                    startActivity(mIntent);
+                    break;
+                case R.id.toSurfaceView2:
+                    mIntent = new Intent(MainActivity.this,SurfaceView2Activity.class);
+                    startActivity(mIntent);
+                    break;
+                case R.id.toSurfaceView3:
+                    mIntent = new Intent(MainActivity.this,SurfaceView3Activity.class);
                     startActivity(mIntent);
                     break;
             }

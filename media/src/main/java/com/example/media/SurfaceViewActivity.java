@@ -77,7 +77,9 @@ public class SurfaceViewActivity extends Activity {
         }
     };
     private void play(){
-        String url = "https://vdept.bdstatic.com/39676a395359487138585571484e6766/427542396b797758/5fc483f448e6b26eee878103dd089a5a23adc94baaadf944e7f8f02ebb1a9a2ffcd27f1854268f0ba7ea2fcf66fcf5456b9c8e3f35a306f02c349c89a3f734f1.mp4?auth_key=1593751585-0-0-ecdc20c9023e510e88246ae3637d267a";
+        String url = "https://vdept.bdstatic.com/696143476744416263666d3861624756/" +
+                "4159756e71356552/eb1e98bc7e9718fc96eec29cbc3135a1154860ff7f13e1ecb6a9745f53e698bda44ad6eb220ad79259" +
+                "1774af76536810.mp4?auth_key=1593767024-0-0-e0eeb0169cb84213ba21e5ed5227fd5b";
         mMediaPlayer.reset();
         mMediaPlayer.setDisplay(mSurfaceHolder);
         try {
