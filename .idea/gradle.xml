@@ -36,6 +36,8 @@
             <option value="$PROJECT_DIR$/scrollview" />
             <option value="$PROJECT_DIR$/seekbar" />
             <option value="$PROJECT_DIR$/seepicture" />
+            <option value="$PROJECT_DIR$/sensor" />
+            <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/store" />
             <option value="$PROJECT_DIR$/stringresource" />
             <option value="$PROJECT_DIR$/timechoose" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/light"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="光线传感器"/>
+    <Button
+        android:id="@+id/magnetic"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="磁场传感器"/>
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="加速度传感器"/>
+    <Button
+        android:id="@+id/level"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="水平传感器"/>
+
+</LinearLayout>
